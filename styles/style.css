@@ -1,0 +1,42 @@
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #ececed;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 2.4375rem 0 6.4375rem 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cor {
+  background-color: red;
+} */
