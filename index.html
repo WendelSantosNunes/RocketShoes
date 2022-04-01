@@ -18,13 +18,17 @@
   </head>
   <body>
     <header>
-      <img src="./assets/logo.svg" alt="Logo" />
+      <img src="./assets/logo.svg" alt="Logo" id="logo" />
       <p>HOMEM</p>
       <p>MULHER</p>
-      <!-- <div class="cor"> -->
       <p>CRINÇA</p>
       <p>CUSTOMIZAR</p>
       <form action="">
+        <img
+          src="./assets/icon-search.svg"
+          alt="icon-search"
+          id="icon-search"
+        />
         <input
           type="text"
           name="pesquisa"
@@ -32,25 +36,26 @@
           placeholder="Pesquisa"
         />
       </form>
-      <img src="./assets/icon-bag.svg" alt="" />
-      <!-- </div> -->
+      <img src="./assets/icon-bag.svg" alt="icon-bag" id="icon-bag" />
     </header>
     <main class="main">
-      <div>
-        <h1>Tênis Esportivo Para Corrida Top</h1>
-        <p>
-          Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e
-          musculoso.
-        </p>
-        <p>R$ 1.000,00</p>
-        <button>COMPRAR</button>
-      </div>
-      <div>
+      <div class="main-left">
         <div>
-          <img src="/assets/tenis-1-ampliado.png" alt="Tênis" />
+          <h1>Tênis Esportivo Para Corrida Top</h1>
+          <p id="description">
+            Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e
+            musculoso.
+          </p>
+          <p id="price">R$ 1.000,00</p>
+          <button>COMPRAR</button>
+        </div>
+      </div>
+      <div class="main-right">
+        <div>
+          <img src="/assets/tenis-1-ampliado.png" alt="Tênis" id="image-set" />
         </div>
 
-        <div>
+        <div id="images">
           <img src="./assets/tenis-1-galeria.png" alt="Tênis" />
           <img src="./assets/tenis-2-galeria.png" alt="Tênis" />
           <img src="./assets/tenis-3-galeria.png" alt="Tênis" />
@@ -59,10 +64,10 @@
     </main>
     <footer>
       <img src="./assets/img-video.png" alt="Imagem de um vídeo" />
-      <p>FACEBOOK</p>
-      <p>INSTAGRAM</p>
-      <p>YOUTUBE</p>
-      <p>TWITTER</p>
+      <div><p>FACEBOOK</p></div>
+      <div><p>INSTAGRAM</p></div>
+      <div><p>YOUTUBE</p></div>
+      <div><p>TWITTER</p></div>
       <div>
         <p>Explore mais</p>
         <img src="./assets/icon-arrow.svg" alt="Arrow" />
