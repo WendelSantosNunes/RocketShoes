@@ -18,9 +18,25 @@ body {
   background-color: #ececed;
 }
 
+img {
+  width: 100%;
+}
+
+/* Header */
+
+#logo {
+  width: 3.25rem;
+}
+
 header {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
 
   margin: 2.4375rem 0 6.4375rem 0;
@@ -31,12 +47,129 @@ header p {
   font-weight: bold;
 }
 
-/* header div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#icon-bag {
+  width: 2.125rem;
 }
 
-.cor {
-  background-color: red;
-} */
+#icon-search {
+  width: 1.5rem;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 0 0.625rem 0.8125rem;
+
+  border-radius: 0.625rem;
+}
+
+form img {
+  padding-right: 0.2rem;
+}
+
+form input {
+  border: none;
+  outline: 0;
+}
+
+/* Main */
+
+main {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Main left */
+.main-left {
+  padding-top: 11.875rem;
+  margin: 0 auto;
+}
+
+.main-left div {
+  width: 22.3125rem;
+}
+
+.main-left div #description {
+  margin-top: 1.3125rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-description);
+}
+
+.main-left h1 {
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+
+.main-right {
+  background-color: var(--main-background);
+  z-index: 1;
+}
+
+#price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  background-color: var(--button);
+  color: #fff;
+
+  padding: 2.0625rem 4.9375rem;
+  margin-top: 1.875rem;
+  border: none;
+  border-radius: 1.5625rem;
+}
+
+/* Main right */
+
+#image {
+  max-width: 37.3125rem;
+}
+
+#images img {
+  max-width: 16.875rem;
+}
+
+.main-right {
+  padding-top: 11.875rem;
+}
+
+.main-right div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div:last-child {
+  background-color: var(--footer);
+  color: #fff;
+}
+
+footer div p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 0.875rem;
+}
+
+footer div img {
+  max-width: 1.5rem;
+}
