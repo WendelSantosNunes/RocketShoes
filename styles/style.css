@@ -1,3 +1,4 @@
+/* Global */
 :root {
   --button: #ff0000;
   --main-background: #c4c4c4;
@@ -22,6 +23,11 @@ img {
   width: 100%;
 }
 
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
 /* Header */
 
 #logo {
@@ -42,9 +48,13 @@ header {
   margin: 2.4375rem 0 6.4375rem 0;
 }
 
-header p {
+header a {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+header a:hover {
+  color: blue;
 }
 
 #icon-bag {
@@ -125,6 +135,11 @@ button {
   border-radius: 1.5625rem;
 }
 
+button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
 /* Main right */
 
 #image {
@@ -133,6 +148,10 @@ button {
 
 #images img {
   max-width: 16.875rem;
+}
+
+#image-select {
+  border-bottom: 0.3125rem solid red;
 }
 
 .main-right {
@@ -150,7 +169,7 @@ button {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 2fr;
 }
 
 footer div {
@@ -159,12 +178,27 @@ footer div {
   justify-content: center;
 }
 
-footer div:last-child {
-  background-color: var(--footer);
+footer div:hover {
+  background-color: blue;
+}
+
+footer div:hover a {
   color: #fff;
 }
 
-footer div p {
+footer div:last-child {
+  background-color: var(--footer);
+}
+
+footer div:last-child:hover {
+  background-color: blue;
+}
+
+footer div:last-child a {
+  color: #fff;
+}
+
+footer div a {
   font-size: 1.5rem;
   font-weight: bold;
   padding-right: 0.875rem;
