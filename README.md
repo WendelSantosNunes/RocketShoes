@@ -4,8 +4,6 @@
 
 ![Página Principal](./.github/Principal.png)
 
-#### | Página de execução
-
 ## 💻 **Tecnologias**
 
 Esse projeto foi desenvolvido com essas tecnologias:
